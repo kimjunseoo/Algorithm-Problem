@@ -1,5 +1,5 @@
 # Algorithm-Problem
-## Solving algorithm problem. Mainly solve of "백준" / "프로그래머스".
+## Solving algorithm problem. Mainly solve of "백준" / "프로그래머스" / "코드업".
 
 
 #### a.cpp file is just for study. All of problem solving codes on /source.
