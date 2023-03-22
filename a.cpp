@@ -2,8 +2,11 @@
 
 using namespace std;
 
-typedef long long ll;
-double a = 1.23456789;
-int b = 2;
-int main(){
+double a = 4.4;
+int main() {
+    cout << &a << '\n';
+    double *b = &a;
+    cout << b << '\n';
+
+    return 0;
 }
