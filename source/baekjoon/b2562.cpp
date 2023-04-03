@@ -2,23 +2,31 @@
 
 using namespace std;
 
-
-int main(){
-    cin.tie(NULL);
-    ios::sync_with_stdio(false);
+// |이 코드는 9개의 수를 입력받아 그 중 최댓값과 그 최댓값이 몇 번째 수인지 출력하는 코드입니다.
+// |
+// |좋은 점:
+// |- 입출력 속도를 향상시키기 위해 cin과 cout의 묶음을 풀어주고, C++ stream과 C stream의 동기화를 끊어줌으로써 입출력 속도를 높이는 코드가 포함되어 있습니다.
+// |
+// |나쁜 점:
+// |- 배열의 크기가 9로 고정되어 있어, 입력받는 수의 개수가 9개가 아닐 경우에는 오류가 발생할 수 있습니다. 이를 해결하기 위해서는 동적 할당을 사용하거나, 입력받는 수의 개수를 입력받아 배열의 크기를 동적으로 할당하는 방법을 사용해야 합니다.
+int main()
+{
+    cin.tie(NULL);               // cin과 cout의 묶음을 풀어줌으로써 입출력 속도 향상
+    ios::sync_with_stdio(false); // C++ stream과 C stream의 동기화를 끊어줌으로써 입출력 속도 향상
 
     int num;
-    int max = 0;
-    int arr[9];
-    int count;
-    for (int i = 0; i < 9; i++)
+    int max = 0;                // 최댓값을 저장할 변수
+    int arr[9];                 // 입력받은 수를 저장할 배열
+    int count;                  // 최댓값이 몇 번째 수인지 저장할 변수
+    for (int i = 0; i < 9; i++) // 9개의 수를 입력받음
     {
-        cin >> num;
+        cin >> num; // 수를 입력받음
 
-        arr[i] = num;
-        if(num > max){
-            max = num;
-            count = i + 1;
+        arr[i] = num; // 입력받은 수를 배열에 저장
+        if (num > max)
+        {                  // 입력받은 수가 현재까지의 최댓값보다 크다면
+            max = num;     // 최댓값을 해당 수로 변경
+            count = i + 1; // 최댓값이 몇 번째 수인지 저장
         }
     }
 
