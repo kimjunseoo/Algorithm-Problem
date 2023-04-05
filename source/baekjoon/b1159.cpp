@@ -12,12 +12,7 @@ int main(){
     {
         cin >> memberName;
 
-        a[(int)memberName[0] - 97]++;   
-    }
-
-    for (int i = 0; i < 27; i++)
-    {
-        cout << a[i] << " ";
+        a[(int)memberName[0] - 'a']++;   
     }
     
     for (int i = 0; i < 26; i++)
