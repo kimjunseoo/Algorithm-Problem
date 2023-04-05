@@ -9,13 +9,13 @@ int main(){
 
     for (int i = 0; i < str.size(); i++)
     {   
-        if(isalpha(str[i]) == 2 && (int)str[i] >= 78){
+        if((int)str[i] >= 78 && (int)str[i] <= 90){
             str[i] -= 13;
-        } else if(isalpha(str[i]) == 2){
+        } else if((int)str[i] >= 65 && (int)str[i] <= 90){
             str[i] += 13;
-        } else if(isalpha(str[i]) == 1 && (int)str[i] >= 110){
+        } else if((int)str[i] >= 110 && (int)str[i] <= 122 ){
             str[i] -= 13;
-        } else if(isalpha(str[i]) == 1){
+        } else if((int)str[i] >= 97){
             str[i] += 13;
         }
     }
